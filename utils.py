@@ -160,7 +160,7 @@ def convert_examples_to_features(args, examples, label_list, max_seq_length, tok
         
         input_mask = [1] * len(input_ids)
 
-        assert len(ori_tokens) == len(ntokens), f"{len(ori_tokens)}, {len(ntokens)}, {ori_tokens}"
+        assert len(ori_tokens) == len(ntokens), f"{len(ori_tokens)}, {len(ntokens)}, {ori_tokens}, {ntokens}"
 
         while len(input_ids) < max_seq_length:
             input_ids.append(0)
